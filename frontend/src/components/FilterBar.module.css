@@ -1,0 +1,89 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.group {
+  display: flex;
+  gap: 6px;
+}
+
+.pill {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  border-radius: 20px;
+  padding: 5px 14px;
+  font-size: 13px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  transition: all var(--transition);
+}
+
+.pill:hover {
+  border-color: var(--border-bright);
+  color: var(--text);
+}
+
+.active {
+  background: var(--accent-glow);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.divider {
+  width: 1px;
+  height: 20px;
+  background: var(--border);
+}
+
+.select {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  border-radius: var(--radius);
+  padding: 5px 12px;
+  font-size: 13px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+  transition: border-color var(--transition);
+}
+
+.select:focus {
+  border-color: var(--accent);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.urgentChip {
+  background: var(--yellow-bg);
+  border: 1px solid rgba(245,200,66,0.25);
+  color: var(--yellow);
+  font-size: 12px;
+  font-family: var(--font-mono);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.count {
+  font-size: 13px;
+  font-family: var(--font-mono);
+  color: var(--text-dim);
+}
