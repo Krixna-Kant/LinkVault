@@ -1,0 +1,41 @@
+# ── Python ────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.env
+.env.local
+*.db
+*.db-journal
+*.sqlite3
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ── Flask ─────────────────────────────────────────────
+instance/
+.webassets-cache
+
+# ── Node / React ──────────────────────────────────────
+node_modules/
+dist/
+.vite/
+*.tsbuildinfo
+.eslintcache
+
+# ── IDE ───────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# ── LinkVault specific ────────────────────────────────
+
+backend/*.db
+backend/instance/
+
+backend/.env
+frontend/.env
+frontend/.env.local
+
+claude.md
